@@ -7,7 +7,7 @@ require (
 	github.com/golang-migrate/migrate/v4 v4.15.2
 	github.com/google/uuid v1.3.0
 	github.com/jackc/pgx/v4 v4.17.0
-	github.com/matryer/is v1.4.0
+	github.com/matryer/is v1.4.1
 	github.com/testcontainers/testcontainers-go v0.13.0
 )
 
