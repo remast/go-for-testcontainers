@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	_ "github.com/golang-migrate/migrate/v4/database/pgx"
-	"github.com/jackc/pgx/v4/pgxpool"
+	_ "github.com/golang-migrate/migrate/v4/database/pgx/v5"
+	"github.com/jackc/pgx/v5/pgxpool"
 	"github.com/matryer/is"
 	"github.com/testcontainers/testcontainers-go"
 	"github.com/testcontainers/testcontainers-go/wait"
@@ -78,7 +78,7 @@ func SetupTestDatabase() (testcontainers.Container, *pgxpool.Pool, error) {
 		return nil, nil, err
 	}
 
-	connPool, err := pgxpool.Connect(context.Background(), dbURI)
+	connPool, err := pgxpool.New(context.Background(), dbURI)
 	if err != nil {
 		return nil, nil, err
 	}
