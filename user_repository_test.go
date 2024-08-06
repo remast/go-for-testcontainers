@@ -45,7 +45,7 @@ func TestUserRepository(t *testing.T) {
 
 func SetupTestDatabase() (testcontainers.Container, *pgxpool.Pool, error) {
 	containerReq := testcontainers.ContainerRequest{
-		Image:        "postgres:latest",
+		Image:        "postgres:16-alpine",
 		ExposedPorts: []string{"5432/tcp"},
 		WaitingFor:   wait.ForListeningPort("5432/tcp"),
 		Env: map[string]string{
