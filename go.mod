@@ -5,7 +5,7 @@ go 1.22
 require (
 	github.com/golang-migrate/migrate/v4 v4.17.1
 	github.com/google/uuid v1.6.0
-	github.com/jackc/pgx/v5 v5.6.0
+	github.com/jackc/pgx/v5 v5.7.0
 	github.com/matryer/is v1.4.1
 	github.com/testcontainers/testcontainers-go v0.33.0
 )
