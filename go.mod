@@ -2,7 +2,7 @@ module go-for-testcontainers
 
 go 1.23
 
-toolchain go1.23.4
+toolchain go1.23.5
 
 require (
 	github.com/golang-migrate/migrate/v4 v4.18.1
