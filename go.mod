@@ -7,7 +7,7 @@ toolchain go1.24.5
 require (
 	github.com/golang-migrate/migrate/v4 v4.18.3
 	github.com/google/uuid v1.6.0
-	github.com/jackc/pgx/v5 v5.7.5
+	github.com/jackc/pgx/v5 v5.7.6
 	github.com/matryer/is v1.4.1
 	github.com/testcontainers/testcontainers-go v0.36.0
 )
